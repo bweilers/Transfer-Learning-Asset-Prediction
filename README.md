@@ -1,4 +1,4 @@
-# Asset Correlation Analysis
+# Transfer Learning in Asset Prediction
 
 ## User Story
 
@@ -24,10 +24,13 @@ The objective of our project was to test the functionality of transfer learning 
 ## Questions
 
 ### What is a trading strategy that in theory should work under any market conditions?
+UCO and SCO are two stocks based on the oil market (UCO is ultra long and SCO is ultra short), and they have a near perfect inverse realationship. By using technical indicators like simple moving averages (SMA), we should be able to build a machine learning model that predicts when it is worth taking a long position on either one of these stocks.
 
 ### What are the challenges of created a well trained Neural Network for predicting winning positions on UCO? And what are the parameters that are ultimately useful for an effective oil model?
 
 ### How does the baseline model created for UCO using sklearn svm compare to the Neural Network model created using deep learing?
+Our initial svc model was fairly accurate
+![Repo Image](./Resources/Images/uco-testing-report.png)
 
 ### Howe effective is it to apply transfer learning to asset position prediction?
 
