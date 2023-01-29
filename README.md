@@ -1,7 +1,5 @@
 # Transfer Learning in Asset Prediction
 
-## User Story
-
 ## Table of Contents
 
 1. [Project Links](#Project-Links)
@@ -27,13 +25,14 @@ The objective of our project was to test the functionality of transfer learning 
 UCO and SCO are two stocks based on the oil market (UCO is ultra long and SCO is ultra short), and they have a near perfect inverse realationship. By using technical indicators like simple moving averages (SMA), we should be able to build a machine learning model that predicts when it is worth taking a long position on either one of these stocks.
 
 ### What are the challenges of created a well trained Neural Network for predicting winning positions on UCO? And what are the parameters that are ultimately useful for an effective oil model?
+One of the challenges was acquiring sufficient data points. Our initial SVC model only required SVM long and SVM short to predict entry and exit points for UCO stock. To solve this we used the FinTa library to add features to the model. The second challenge wa th model itself. Because Neural Networks use layers, we determeind the number of layers and the output. But our intial model was giving us a negative loss and accuracy. To improve the model we change the y-target form -1/1 to 0/1 in order to be more compatible with the output layer's sigmoid activation function. Additionally we found that setting the loss parameter to 'binary_crossentropy' and optimizer to 'adam' provided the best model.
 
 ### How does the baseline model created for UCO using sklearn svm compare to the Neural Network model created using deep learing?
 Our initial svc model was fairly accurate
 ![Repo Image](./Resources/Images/uco-testing-report.png)
 
 ### Howe effective is it to apply transfer learning to asset position prediction?
-
+The evidence from our transfer learning test indicated that applying a model built for oil stocks to cryptocurrencies and tokens resulted in an inaccuerate model. 
 
 ## Code and Dependencies
 This code is to be run on Google Colab 
@@ -43,29 +42,40 @@ The following Python Libraries were also imported and used
 
 `import pandas as pd`
 
-`import os`
-
-`import requests`
-
 `import numpy as np`
 
 `import datetime as dt`
 
-`from pathlib import Path`
+`import yfinance as yf`
 
-`import pandas_datareader as web`
+`from sklearn import svm`
 
+`from sklearn.metrics import classification_report`
 
-`import matplotlib.pyplot as plt`
+`from keras.models import Sequential,  Model`
+
+`from keras.layers import Dense, Activation, Dropout`
+
+`from tensorflow.keras.models import model_from_json`
+
+`from sklearn.preprocessing import StandardScaler`
+
+`from sklearn.model_selection import train_test_split`
+
 
 ## Instructions
+This code is to be run on Google Colab. Supporting files in the Resources folder will need to be uploaded with
+`from google.colab import files`
+
+`uploaded = files.upload()`
+
 
 
 ## Project Team
 
 [Ben Eilers](https://github.com/bweilers) <br>
-[Wade Burgess](https://github.com/) <br>
-[Danny Ndayisenga](https://github.com/) <br>
+[Wade Burgess](https://github.com/WadeB22) <br>
+[Danny Ndayisenga](https://github.com/dannynday) <br>
 
 ## Contribution Guidelines:
 
