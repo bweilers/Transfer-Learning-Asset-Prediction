@@ -14,7 +14,6 @@
 ## Project Links
 
 [Repo Link](https://github.com/dannynday/goup2) <br>
-![Repo Image](./images/output.png)
 
 ## Project Summary
 The objective of our project was to test the functionality of transfer learning to create a neural network machine learning model that could be applied to a variety of assets. To test this, we built a model that predicted winning positions on oil stocks, specifically ProShares Ultra Bloomberg Crude Oil (UCO). This model was trained on 43 features, including a variety of techinical indicators. We then saved the model and applied it to the crypto-currency markets, specifically looking some of the world's top exchanges and their native tokens (e.g. FTX/FTT, Binance/BNB, etc.)
@@ -31,11 +30,15 @@ One of the challenges was acquiring sufficient data points. Our initial SVC mode
 Our initial svc model was fairly accurate
 ![Repo Image](./Resources/Images/uco-testing-report.png)
 
+Our neural network model improved on the score
+![Repo Image](./Resources/Images/nn-model-report.png)
+
 ### Howe effective is it to apply transfer learning to asset position prediction?
 The evidence from our transfer learning test indicated that applying a model built for oil stocks to cryptocurrencies and tokens resulted in an inaccuerate model. 
 
 ## Code and Dependencies
-This code is to be run on Google Colab 
+This code is to be run on Google Colab. To run, download notebooks and import into Google Colab.
+Be sure to download the resources files, ensure the names match the code, and upload as directed in the comments.
 `Python 3`
 
 The following Python Libraries were also imported and used
