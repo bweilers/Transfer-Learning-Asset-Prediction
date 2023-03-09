@@ -72,7 +72,11 @@ This code is to be run on Google Colab. Supporting files in the Resources folder
 
 `uploaded = files.upload()`
 
-
+## Contribution Summary
+For this project created the concept for our machine learning experiment. I also functioned as the project manager by documenting our project vision, created pseudo-code and assigned completion to project collaborators, and tracking progress. Additionally I contributed to code in the following areas:
+- Data cleaning cleaning and preparation for machine learning
+- Coded a function that that data preparation process for a given asset class
+- Employed and executed our transfer learning test
 
 ## Project Team
 
