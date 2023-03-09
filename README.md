@@ -16,7 +16,7 @@
 [Repo Link](https://github.com/dannynday/goup2) <br>
 
 ## Project Summary
-The objective of our project was to test the functionality of transfer learning to create a neural network machine learning model that could be applied to a variety of assets. To test this, we built a model that predicted winning positions on oil stocks, specifically ProShares Ultra Bloomberg Crude Oil (UCO). This model was trained on 43 features, including a variety of techinical indicators. We then saved the model and applied it to the crypto-currency markets, specifically looking some of the world's top exchanges and their native tokens (e.g. FTX/FTT, Binance/BNB, etc.)
+The objective of our project was to test the functionality of transfer learning to create a neural network machine learning model that could be applied to a variety of assets. To test this, we built a model that predicted winning positions on oil stocks, specifically ProShares Ultra Bloomberg Crude Oil (UCO). This model was trained on 43 features, including a variety of technical indicators. We then saved the model and applied it to the crypto-currency markets, specifically looking some of the world's top exchanges and their native tokens (e.g. FTX/FTT, Binance/BNB, etc.)
 
 ## Questions
 
